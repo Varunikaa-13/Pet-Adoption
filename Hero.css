@@ -1,0 +1,45 @@
+/* Hero.css */
+.hero {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensure it doesn't overflow */
+    display: flex; /* Center the content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.hero img {
+    position: absolute; /* Positioning for absolute cover */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    object-fit: cover; /* Cover the area without distortion */
+    transform: translate(-50%, -50%); /* Center the image */
+    filter: brightness(0.7); /* Slightly darken the image for contrast */
+}
+
+.hero h1 {
+    position: relative; /* Position relative for layering */
+    color: white; /* Text color */
+    z-index: 1; /* Ensure it appears above the image */
+    margin-top: 20px; /* Add margin from top */
+    font-size: 3rem; /* Adjust font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+    padding: 0 20px; /* Add some padding for responsiveness */
+    animation: fadeIn 1.5s ease; /* Add fade-in animation */
+}
+
+/* Animation for the heading */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Move back to original position */
+    }
+}

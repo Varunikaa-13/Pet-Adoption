@@ -1,0 +1,120 @@
+.dog-page {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background color */
+  text-align: center;
+}
+
+.dog-page h1 {
+  font-size: 2.5rem;
+  color: #343a40; /* Dark color for the title */
+  margin-bottom: 10px;
+}
+
+.dog-page p {
+  font-size: 1.2rem;
+  color: #6c757d; /* Gray color for the description */
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column; /* Align filters vertically */
+  align-items: center; /* Center the filter section */
+  background-color: #ffffff; /* White background for filter container */
+  padding: 15px; /* Padding around filters */
+  border-radius: 10px; /* Rounded corners for the filter container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  max-width: 300px; /* Limit the width of the filter section */
+  margin: 0 auto 20px auto; /* Center the filters and add bottom margin */
+}
+
+.filter-group {
+  margin-bottom: 15px; /* Space below each filter */
+  width: 100%; /* Ensure filters take full width */
+  text-align: left; /* Align filter labels to the left */
+}
+
+.filter-group label {
+  display: block; /* Ensure the label is on its own line */
+  font-weight: 600; /* Bold label */
+  color: #343a40; /* Dark color for label */
+  margin-bottom: 5px; /* Space below the label */
+  font-size: 0.9rem; /* Slightly smaller font size for the label */
+}
+
+.filter-group select {
+  width: 100%; /* Full width for the dropdown */
+  padding: 8px 10px; /* Padding inside the dropdown */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  border: 1px solid #ced4da; /* Border for dropdown */
+  border-radius: 6px; /* Slightly rounded corners */
+  transition: border-color 0.3s, background-color 0.3s; /* Smooth border and background transitions */
+  background-color: #f8f9fa; /* Light background for dropdown */
+}
+
+.filter-group select:hover {
+  background-color: #f1f3f5; /* Slightly darker background on hover */
+}
+
+.filter-group select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+  background-color: #ffffff; /* White background when focused */
+}
+
+.dog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  margin: 0 auto; /* Center the grid */
+  max-width: 1200px; /* Limit the maximum width */
+}
+
+.dog-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  overflow: hidden; /* Prevent content overflow */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth scale and shadow transition */
+  padding: 15px; /* Padding inside the card */
+}
+
+.dog-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.dog-image {
+  width: 100%; /* Make the image fill the card */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for image */
+  border-bottom: 2px solid #ffcc00; /* Border below image */
+}
+
+.dog-card h3 {
+  font-size: 1.5rem;
+  color: #343a40; /* Dark color for breed name */
+  margin: 10px 0;
+}
+
+.dog-card p {
+  font-size: 1rem;
+  color: #6c757d; /* Gray color for age and color */
+  margin: 0 0 15px 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .dog-page {
+    padding: 10px; /* Reduce padding on smaller screens */
+  }
+
+  .filters {
+    width: 100%; /* Full width filter on smaller screens */
+    padding: 10px; /* Reduce padding on small screens */
+  }
+
+  .dog-grid {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+  }
+}

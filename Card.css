@@ -1,0 +1,41 @@
+.cards {
+    display: flex; /* Flexbox for horizontal arrangement */
+    justify-content: center; /* Center align cards */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    margin: 0 auto; /* Center the container */
+    position: relative; /* Enable positioning for child elements */
+    z-index: 1; /* Ensure cards are above the hero image */
+    margin-top: -100px; /* Slightly lift cards over hero image */
+}
+
+.card {
+    width: 250px; /* Adjust width */
+    height: 200px; /* Adjust height */
+    padding: 20px; /* Adjust padding for more space */
+    margin: 20px; /* Space between cards */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    overflow: hidden; /* Prevent overflow of image */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    background-color: white; /* Background color for cards */
+    text-align: center; /* Center text */
+}
+
+.icon {
+    margin-bottom: 15px; /* Space between icon and text */
+}
+
+.card h3 {
+    margin: 10px 0; /* Space around heading */
+    color: #333; /* Darker color for headings */
+}
+
+.card p {
+    color: #666; /* Gray color for paragraph text */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}

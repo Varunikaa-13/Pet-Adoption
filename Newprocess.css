@@ -1,0 +1,40 @@
+.adoption-process-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .adoption-process-page h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .adoption-process-page p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .adoption-process-page ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .adoption-process-page ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .adoption-process-page ul li::before {
+    content: "✔";
+    margin-right: 8px;
+    color: #28a745;
+  }
+  

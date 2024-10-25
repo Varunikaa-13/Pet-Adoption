@@ -1,0 +1,62 @@
+.image-grid {
+    display: flex;
+    flex-direction: column; /* Stack title and intro above the grid */
+    align-items: center; /* Center items horizontally */
+    padding: 2rem;
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.grid-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem; /* Space below the introduction */
+}
+
+.grid-container {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center the grid items */
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+}
+
+.grid-item {
+    margin: 1rem;
+    text-align: center;
+    border: 2px solid #ddd; /* Light border around items */
+    border-radius: 10px; /* Rounded corners for items */
+    overflow: hidden; /* Clip content if it overflows */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    position: relative; /* Position for absolute elements */
+}
+
+.grid-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.grid-item img {
+    width: 100%; /* Full width for responsive images */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth transition for image zoom */
+}
+
+.grid-item img:hover {
+    transform: scale(1.1); /* Zoom effect on image hover */
+}
+
+.grid-item button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem; /* Increased padding for better click area */
+    background-color: #ffcc00; /* Bright button color */
+    color: #333; /* Darker text color */
+    border: none;
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer;
+    font-size: 1rem; /* Font size for button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.grid-item button:hover {
+    background-color: #e6b800; /* Darker button color on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+}

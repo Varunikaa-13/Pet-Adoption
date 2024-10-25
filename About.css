@@ -1,0 +1,43 @@
+.about {
+    padding: 4rem 2rem; /* More space for better layout */
+    text-align: center; 
+    font-size: 1.1rem; 
+    color: #333; 
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.about h2 {
+    font-size: 2rem; /* Larger font size for the title */
+    margin-bottom: 1rem; /* Space below the title */
+    color: #ff6f61; /* Primary color for the title */
+}
+
+.features {
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center align features */
+    flex-wrap: wrap; /* Wrap for smaller screens */
+    margin-top: 2rem; /* Space above the feature cards */
+}
+
+.feature {
+    margin: 1rem; /* Space between feature cards */
+    padding: 1.5rem; /* Space within feature cards */
+    border: 1px solid #ddd; /* Border for separation */
+    border-radius: 10px; /* Rounded corners */
+    width: 200px; /* Fixed width for consistency */
+    text-align: center; /* Center the text */
+    background-color: white; /* White background for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.feature:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.feature h3 {
+    margin-top: 1rem; /* Space above the feature title */
+    color: #333; /* Dark color for title */
+}

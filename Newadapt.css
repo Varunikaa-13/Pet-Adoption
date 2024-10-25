@@ -1,0 +1,54 @@
+.new-adoptions-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .new-adoptions-page h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .new-adoptions-page p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Add styles for any list of pets (optional) */
+  .new-adoptions-page .pet-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .new-adoptions-page .pet-card {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  .new-adoptions-page .pet-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .new-adoptions-page .pet-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .new-adoptions-page .pet-card p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
